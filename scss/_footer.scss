@@ -1,0 +1,79 @@
+$estilos: (
+    color: #891619
+);
+/*FOOTER*/
+.bg-footer{
+    background-color: map-get($estilos,color);
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    
+    margin: auto;
+}
+
+.redes{
+    height: 40px;
+    margin: 0px 60px;
+}
+/*color de los logos de ig, wsp y fb color blanco*/
+.fa-facebook-square{
+    color:#fff;
+}
+.fa-whatsapp{
+    color: #fff;
+}
+.fa-instagram{
+    color: #fff;
+}
+
+.redes-contacto{
+    text-align: justify;
+}
+.bg-footer-nosotros{
+    background-color: #891619;
+    text-align:left;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    grid-area: footer;
+    margin-top: auto;
+}
+
+.bg-footer-productos{
+    background-color: #891619;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    grid-area: footer;
+}
+
+
+/*.bg-footer-contactos {
+    background-color: #891619;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    font-weight: 100;
+    bottom: 0;
+    margin-top:auto;
+ }*/
+
+ .bg-footer-contactos{
+    background: map-get($estilos, color);
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+    font-size: 17;
+}

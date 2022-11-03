@@ -1,0 +1,192 @@
+/*header index*/
+.nav{ 
+    background: #891619;
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}  
+/*ubicacion del logo*/
+.enlace{
+    position:absolute;
+    padding: 15px 50px;
+}
+
+/* logo */
+.logo{
+    height: 30px;
+    margin: 0px 20px;
+    padding: 0px 60px;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+
+li a.active, li a:hover{
+    background: #fff;
+    color: rgb(192, 28, 28);
+    transition: .5s;
+}
+/*fondo de pantalla de index*/
+.index{
+    background-image: url(../img/medialunas_dulces.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:70px;
+    background-attachment: static;
+    background-position: center;
+    
+}
+/*fondo de pantalla de nosotros html*/
+.nosotros{
+    background-image: url(../img/medialunas_argentinas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+/*fondo de pantalla de productos html*/
+
+/*fondo de pantalla de servicios empresas html*/
+.serviciosempres{
+    background-image: url(./img/Facturas-de-panaderia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+/*fondo de pantalla de contacto html*/
+.contacto{
+    background-image: url(../img/panaderia_imagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    
+    width: 100%;
+}
+
+li a{
+    text-decoration: none;
+        
+}
+.nav{
+    align-items: center;
+    justify-content: space-between
+    ;
+}
+
+.menu ul{
+    
+    list-style: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    
+}
+.menul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main{
+    margin: 15px;
+}
+
+/*productos: imagenes carrusel*/
+.productos {
+    background-image: url(../img/medialunas_argentinas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 78vh;
+    position: static;
+    width: 100%; }
+    
+.menu li a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    height: 40px; 
+    
+}
+  
+
+/*cuando paso con el mouse en las opciones de nav, el color de cada alternativa cambia */
+li a.active, .menu a:hover{
+    background-color: #fff;
+    color: rgb(94, 11, 11);
+}
+.checkbtn{
+    font-size: 30px;
+    color:#fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/*MAIN*/
+
+.nosotros.df-navbar{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #891619;
+    color: #fff;
+    padding: 15px;
+
+    float: left;
+
+}  
+/*formulario*/
+.df-formulario{
+    width: 300px;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 15px;    
+    box-sizing: border-box;
+}
+fieldset{
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.4);
+    width: 100%
+}
+
+.contacto{
+    margin: 0;
+        
+}
+input,textarea {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background:#be1218;
+    
+}
+#boton:hover{
+    cursor: pointer;
+}

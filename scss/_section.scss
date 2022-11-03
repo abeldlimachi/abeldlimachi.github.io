@@ -1,0 +1,139 @@
+$bg1: aliceblue;
+$bg2: aqua;
+$bg3: rgb(157, 131, 131);
+$bg4: aquamarine;
+$bg5: azure;
+$bg6: cadetblue;
+
+
+
+/*panes*/
+.caja1{
+    background-color: #ae1116; 
+    width: 95%;
+    height: 10%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: panes;
+}
+
+@mixin caja ($fondo){
+    background-color: $fondo;
+    
+}
+.caja1:hover{
+    @include caja($bg1);
+    /*background-color: aliceblue;*/
+    transition: all 2s ease;
+}
+/*dulces*/
+.caja2{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: dulces;
+}
+
+.caja2:hover{
+        @include caja($bg2);
+        /*background-color: aliceblue*/;
+        transition: all 2s ease;
+}
+/*salados*/
+.caja3{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: salados;
+}
+
+.caja3:hover{
+    @include caja($bg3);
+   /* background-color: aliceblue;*/
+    transition: all 2s ease;
+}   
+/*tortas*/
+.caja4{
+    background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: tortas;
+}
+
+.caja4:hover{
+    @include caja($bg4);
+    /*background-color: aliceblue;*/
+    transition: all 2s ease;
+}
+
+/*masas*/
+.caja5{
+    background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: masas;    
+}
+
+.caja5:hover{
+    @include caja($bg5);
+    /*background-color: aliceblue;*/
+    transition: all 2s ease;
+}
+/*bombones*/
+.caja6{
+    background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: bombones;
+}
+
+.caja6:hover{
+    @include caja($bg6);
+    /*background-color: aliceblue;*/
+    transition: all 2s ease;
+}
+
+
+
+.df-ol {
+    margin: -0%;
+    justify-content: space-around;
+    height: 485px;
+    padding: 10%;
+    width: 100%;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows:repeat(2,auto);
+    grid-template-areas: 
+    "panes  dulces  salados"
+    "tortas masas   bombones"
+    ;
+}
+

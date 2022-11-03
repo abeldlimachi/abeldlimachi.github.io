@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*header index*/
+.nav{ 
+    background: #891619;
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}  
+/*ubicacion del logo*/
+.enlace{
+    position:absolute;
+    padding: 15px 50px;
+}
+
+/* logo */
+.logo{
+    height: 30px;
+    margin: 0px 20px;
+    padding: 0px 60px;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+
+li a.active, li a:hover{
+    background: #fff;
+    color: rgb(192, 28, 28);
+    transition: .5s;
+}
+/*fondo de pantalla de index*/
+.index{
+    background-image: url(./img/medialunas.jpg) no-repeat;
+    background-size: cover;
+    grid-area: df-ol;
+    top:70px;
+    
+}
+/*fondo de pantalla de nosotros html*/
+.nosotros{
+    background-image: url(./img/medialunas_argentinas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+/*fondo de pantalla de productos html*/
+.productos{
+    background-image: url(./img/medialunas_argentinas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+/*fondo de pantalla de servicios empresas html*/
+.serviciosempres{
+    background-image: url(./img/Facturas-de-panaderia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+/*fondo de pantalla de contacto html*/
+.contacto{
+    background-image: url(./img/panadería_imagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;}
+
+
+.menu{
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    position: relative;
+    justify-content:space-around;
+}
+.menu>li>a{
+   margin: 0px;
+    margin-left: 0px;
+    display: block;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+      
+}
+/*SUBMENU*/
+.submenu{
+    width: 120px;
+    flex-direction: column;
+    background: #eb444a;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0 , 0.5);
+    position: absolute;
+    top:70px;
+    left: 200px;
+    padding: 10px -95px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0 , 0.5);
+    z-index: 10;
+    opacity: 0;
+    list-style: none;
+}
+
+.submenu:hover{
+    visibility: visible;
+    opacity: 1;
+    top:70px;
+    color: black; 
+}
+
+/*cuando paso con el mouse en las opciones de nav, el color de cada alternativa cambia */
+li a.active, .menu a:hover{
+    background-color: #fff;
+    color: rgb(94, 11, 11);
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:#fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.df-ol{
+    background: url(./img/medialunas.jpg) no-repeat;
+    background-size: cover;
+    grid-area: df-ol;
+    top:70px;
+    
+}
+.panes{
+    background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: panes;
+}
+.panes:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.dulces{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: dulces;
+}
+
+.dulces:hover{
+        background-color: aliceblue;
+        transition: all 2s ease;
+}
+.salados{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: salados;
+}
+
+.salados:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}   
+.tortas{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: tortas;
+}
+
+.tortas:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+
+.masas{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: masas;    
+}
+
+.masas:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.bombones{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    grid-area: bombones;
+}
+
+.bombones:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+
+/*MAIN*/
+
+.nosotros.df-navbar{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #891619;
+    color: #fff;
+    padding: 15px;
+
+    float: left;
+
+}  
+
+.df-ol {
+    margin: -0%;
+    justify-content: space-around;
+    height: 30%;
+    padding: 10%;
+    width: 100%;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows:repeat(2,auto);
+    grid-template-areas: 
+    "panes  dulces  salados"
+    "tortas masas   bombones"
+    ;
+}
+
+
+/*FOOTER*/
+.bg-footer{
+    background-color: #891619;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+}
+.redes{
+    height: 40px;
+    margin: 0px 60px;
+
+}
+.bg-footer-nosotros{
+    background-color: #891619;
+    text-align:left;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    font-weight: 100;
+    bottom: 0;
+
+}
+
+
+@media screen and (max-width: 500px ){
+    .df-ol{        
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        justify-content: auto;
+        grid-template-areas: 
+        "df-navbar  df-navbar"
+        "panes panes"
+        "dulces dulces"
+        "salados    salados"
+        "tortas tortas"
+        "masas  masas"
+        "bombones   bombones"
+        "footer footer"
+        ;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .menu li{
+        font-size: 15px;
+        display: grid;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .nav-menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 100px;
+        background: rgba(0, 0, 0 , .95);
+        text-align: center;
+        transition: all .5s;
+    }
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 110px;
+    }
+    .nav ul li a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 610px){
+    .enlace{
+        padding-left: 20px;
+    }
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        display: fixed;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #913033;    
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 40px;
+    
+    }
+
+    .logo{
+        margin-top: 0px;
+    }
+    .checkbtn{
+        margin-top: -8px;
+    }
+    .df-ol{
+        margin-top: 0%;
+        padding-top: 20%  ;
+        display: block;
+    }
+    .df-navbar{
+        padding: 0%;
+    }
+    
+    nav ul li a{
+        font-size: 20px;
+        line-height: 5px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:#fff;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        }
+    }
+    .active{
+        background-color: none;
+    }
